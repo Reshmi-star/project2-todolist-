@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5dce5, #e9e2f8);
+    color: #43394d;
+}
+
+.container {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fffaf5;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #43394d25;
+}
+
+h1, .subtitle {
+    text-align: center;
+}
+
+.subtitle {
+    color: #79638f;
+}
+
+#form {
+    display: flex;
+    gap: 10px;
+}
+
+#text {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d7c9e8;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add {
+    background: #79638f;
+    color: white;
+}
+
+#count {
+    margin-top: 22px;
+    font-weight: bold;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.filter {
+    background: #e9e2f8;
+    color: #43394d;
+}
+
+.filter.active {
+    background: #79638f;
+    color: white;
+}
+
+#list {
+    padding: 0;
+    list-style: none;
+}
+
+#list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding: 12px;
+    background: #f5dce5;
+    border-radius: 8px;
+}
+
+.task-text {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.done .task-text {
+    text-decoration: line-through;
+    color: #79638f;
+}
+
+.task-btn {
+    background: #e9e2f8;
+}
+
+.delete-btn {
+    background: #b94c68;
+    color: white;
+}
+
+#clear {
+    width: 100%;
+    margin-top: 10px;
+    background: #43394d;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 20px;
+    }
+
+    #form {
+        flex-wrap: wrap;
+    }
+
+    #text {
+        flex-basis: 100%;
+    }
+}
